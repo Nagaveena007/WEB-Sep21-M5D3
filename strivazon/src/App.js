@@ -5,6 +5,7 @@ import Home from "./components/Home";
 import Company from "./components/Company";
 import Navbarpage from "./components/Navbar";
 import Search from "./components/Serch";
+import Favorite from "./components/Favorite";
 
 function App() {
   return (
@@ -13,7 +14,8 @@ function App() {
       <Search />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/:companyName" element={<Company />} />
+        <Route path="/companyName" element={<Company />} />
+        <Route path="/favorite" element={<Favorite />} />
       </Routes>
     </BrowserRouter>
   );
